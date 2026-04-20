@@ -2,32 +2,26 @@
     font-family: neu;
     src: url(./NHaasGroteskTXPro-55Rg.ttf);
 }
-
 @font-face {
     font-family: neu;
     font-weight: 100;
     src: url(./NHaasGroteskTXPro-65Md.ttf);
 }
-
 @font-face {
     font-family: neu;
     font-weight: 200;
     src: url(./NHaasGroteskTXPro-75Bd.ttf);
 }
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family:neu;
 }
-
 html,body{
     height: 100%;
     width: 100%;
-
 }
-
 #main{
     position: relative;
     z-index: 10;
@@ -58,7 +52,6 @@ nav{
     justify-content: space-between;
     gap: 1vw;
 }
-
 #nav-part2 h4{
     padding: 10px 20px;
     border: 1px solid #8a8a8a89;
@@ -69,7 +62,6 @@ nav{
     position: relative;
     overflow: hidden;
 }
-
 #nav-part2 h4::after{
     content: "";
     position: absolute;
@@ -215,12 +207,10 @@ nav{
     overflow-x:auto;
     white-space: nowrap;
     width: 100%;
-
 }
 #move-text::-webkit-scrollbar{
     display: none;
 }
-
 .con{
     white-space: nowrap;
     display: inline-block;
@@ -229,12 +219,10 @@ nav{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-
 #move-text h1{
     font-size: 8vw;
     display: inline-block;
 }
-
 #gola{
     height: 60px;
     width: 60px;
@@ -699,9 +687,9 @@ nav{
         background-color: #EFEAE3;
     }
     #full-scr{
-        height: 80vh;
+        height: 40vh;
         width: 100%;
-        background-color: #f5f2f2;
+        background-color: #464545;
         position: fixed;
         top: -100%;
         transition: all ease 0.8s;
@@ -714,32 +702,42 @@ nav{
     }
     
     #full-div1{
-        height: 60%;
+        height: 30%;
         width: 100%;
         position: relative;
         background-color:transparent;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        padding: 3vw 15vw;
+        padding-right: 20vw;
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
-        flex-direction: column;
+        flex-direction: row;
         z-index: 999;
+        gap: 20px;
+    }
+    #full-div1 button{
+        padding: 14px 18px;
+        border-radius: 50px;
+        border: 1px solid #00000030;
+        background-color: transparent;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
     }
     #full-div1 h2 a{
         text-decoration: none;
         color: #000;
-        font-size: 4vw;
+        font-size: 16px;
         text-transform: uppercase;
-        line-height: 12vw;
-        margin-bottom: 2vh;
         display: block;
     }
     #gooey{
         position: absolute;
         height: 65vw;
-        width: 65vw;
+        width: 90vw;
         background:linear-gradient(to top right, #ff2d03, #ff5e0b);
         border-radius: 50%;
         filter: blur(45px);
@@ -757,11 +755,11 @@ nav{
     }
     @keyframes gooey {
         from{
-            filter: blur(25px);
+            filter: blur(30vw);
             transform: translate(-10%, -10%) skew(0);
         }
         to{
-            filter: blur(35px);
+            filter: blur(40px);
             transform: translate(10% , 10%)skew(-10deg);
         }
         
@@ -890,8 +888,7 @@ nav{
      #but{
         width: 33%;
         padding-top: 6vw;
-
-    }
+     }
 
     #page4{
         width: 100%;
@@ -1124,8 +1121,6 @@ nav{
 }
 
 }
-
-
 
 
 
